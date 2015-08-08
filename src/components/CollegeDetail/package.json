@@ -1,0 +1,6 @@
+{
+  "name": "CollegeDetail",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./CollegeDetail.js"
+}

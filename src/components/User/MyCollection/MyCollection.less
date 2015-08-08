@@ -1,0 +1,144 @@
+@import '../../variables.less';
+@import '../../function.less';
+@import '../../themecolor.less';
+
+html{
+	body{
+         .contentPart {
+            background: none;
+            margin: 0 auto;
+            padding: 10px 0;
+            width: 1024px;
+
+
+            .myCollect {
+                margin-top: 23px;
+
+                .infoUl {
+                    margin: 0;
+                }
+
+                    .infoUl li:first-child {
+                        border: 3px solid @themecolor;
+                        border-bottom: medium none;
+                        width: 113px;
+                        height: 42px;
+                    }
+
+                    .infoUl li {
+                        float: left;
+
+                        h3 {
+                            margin: 4px 0;
+                            text-align: center;
+                        }
+                    }
+
+                .border_bottom {
+                    border-bottom: 3px solid @themecolor;
+                    height: 42px;
+                    width: 910px;
+                }
+
+                .schoolListUl {
+                    padding: 0 22px 22px;
+
+                    li {
+                        border-bottom: 1px solid #cccccc;
+                        margin-top: 22px;
+                        padding-bottom: 20px;
+
+                        .schoolBorder {
+                            border: 1px solid #cccccc;
+                            width: 86px;
+                            height: 73px;
+                            text-align: center;
+                            float: left;
+
+                            .img {
+                                width: 86px;
+                                height: 73px;
+                            }
+                        }
+
+                        .introduce {
+                            float: left;
+                            margin-left: 24px;
+                            width:860px;
+
+                            .name {
+                                line-height: 20px;
+
+                                .ch {
+                                    font-size: 18px;
+                                }
+
+                                .border {
+                                    border: 1px solid #cccccc;
+                                    width: 1px;
+                                    margin: 0 9px;
+                                }
+
+                                .en {
+                                    font-size: 14px;
+                                }
+                            }
+
+                            .lal {
+                                margin-top: 17px;
+
+                                .love {
+                                    float: left;
+
+                                    i {
+                                        background: url('http://new.rrliuxue.com/WebResources/Default/images/study-abroad-solution/loveLocationIcon.png');
+                                        height: 17px;
+                                        width: 17px;
+                                        display: block;
+                                        float: left;
+                                    }
+
+                                    #num {
+                                        margin-left: 6px;
+                                    }
+                                }
+
+                                .location {
+                                    float: left;
+                                    margin-left: 27px;
+
+                                    i {
+                                        background: url('http://new.rrliuxue.com/WebResources/Default/images/study-abroad-solution/loveLocationIcon.png') 17px 0;
+                                        height: 17px;
+                                        width: 17px;
+                                        display: block;
+                                        float: left;
+                                    }
+
+                                    #location {
+                                        margin-left: 6px;
+                                    }
+                                }
+                            }
+
+                            .address {
+                                font-size: 14px;
+                                margin-top: 17px;
+                            }
+                        }
+
+                        .button {
+                            line-height: 20px;
+
+                            button {
+                                width: 135px;
+                                height: 40px;
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

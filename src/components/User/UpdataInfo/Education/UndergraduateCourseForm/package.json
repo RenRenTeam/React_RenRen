@@ -1,0 +1,6 @@
+{
+  "name": "UndergraduateCourseForm",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./UndergraduateCourseForm.js"
+}

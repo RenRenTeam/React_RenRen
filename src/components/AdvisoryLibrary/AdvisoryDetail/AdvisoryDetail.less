@@ -1,0 +1,191 @@
+@import "../../themecolor.less";
+@import "../../function.less";
+html{
+    body{
+        .advistory-box {
+            width: 1024px;
+            margin: 0 auto;
+
+            .country {
+                margin: 0 auto;
+                width: 330px;
+                margin-top: 50px;
+                margin-bottom: 37px;
+
+                .item {
+                    background: rgba(0, 0, 0, 0) url("http://new.rrliuxue.com/WebResources/Default/images/open-class/split.jpg") no-repeat scroll right center;
+                    color: #666;
+                    cursor: pointer;
+                    float: left;
+                    font-size: 12px;
+                    text-align: center;
+                    width: 64px;
+
+                    &.active {
+                        color: @themecolor;
+                    }
+
+                    &.full {
+                        background: none;
+                    }
+                }
+            }
+
+            .search_input_dv {
+                width: 400px;
+                height: 61px;
+                background: url("http://new.rrliuxue.com/WebResources/Default/advistory-library/search_button.png") no-repeat;
+                margin: 25px auto;
+                position: relative;
+
+                input {
+                    background: none;
+                    border: 0 none;
+                    font-size: 18px;
+                    color: #9f9f9f;
+                    height: 57px;
+                    line-height: 57px;
+                    padding: 1px 0 0 15px;
+                    width: 335px;
+                    float: left;
+
+                    &:focus {
+                        border: medium none;
+                        box-shadow: none;
+                    }
+                }
+
+                button {
+                    background: none;
+                    border: 0 none;
+                    height: 57px;
+                    line-height: 57px;
+                    width: 60px;
+                    float: left;
+                }
+            }
+
+            .listUl {
+                width: 635px;
+                float: left;
+
+
+                li {
+                    height: 270px;
+                    margin-top: 40px;
+                    border-bottom: 1px solid #cccccc;
+
+                    .title {
+                        font-size: 18px;
+                        color: #000000;
+                    }
+
+                    .themecolor {
+                        color: @themecolor;
+                    }
+
+                    .content {
+                        font-size: 14px;
+                        color: #9f9f9f;
+                        width: 300px;
+                        margin-top: 13px;
+                    }
+
+                    .detail_content {
+                        margin-top: 13px;
+                        width: 590px;
+                        height: 150px;
+                        position: relative;
+
+                        .font {
+                            font-size: 14px;
+                            width: 320px;
+                            line-height: 21px;
+                            height: 150px;
+
+                            .readAll {
+                                text-align: right;
+                                position: absolute;
+                                bottom: 0px;
+                                right: 0px;
+
+                                a {
+                                    color: @themecolor;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .article {
+                width: 750px;
+
+                .title {
+                    font-weight: bold;
+                    font-size: 18px;
+                    margin-top: 30px;
+                    margin-left: 15px;
+                }
+
+                .prefacePart {
+                    border-bottom: 1px solid #9f9f9f;
+
+                    .preface {
+                        font-size: 14px;
+                        color: #9f9f9f;
+                        margin-top: 30px;
+                        height: 30px;
+                        width: 692px;
+                        margin-left: 15px;
+
+                        .themecolor {
+                            color: @themecolor;
+                        }
+
+                        .dv_button {
+                            margin-right: 7px;
+                            line-height: 16px;
+                            height: 16px;
+                            position: relative;
+                            width: 16px;
+                            margin-top: 2px;
+
+                            .like {
+                                background: url("http://new.rrliuxue.com/WebResources/Default/images/hand-action.png") no-repeat 0px 0px;
+                                width: 16px;
+                                height: 16px;
+                                border: medium none;
+                                position: absolute;
+                            }
+                        }
+                    }
+                }
+
+                .content {
+                    line-height: 30px;
+                    margin-top: 30px;
+
+                    .images {
+                        margin-top: 37px;
+                        margin-bottom: 90px;
+                        text-align: center;
+                    }
+
+                    .sharePart {
+                        margin-left: 15px;
+
+                        li {
+                            float: left;
+                            margin-right: 20px;
+                        }
+                    }
+                }
+
+                
+            }
+
+            
+        }
+    }
+}

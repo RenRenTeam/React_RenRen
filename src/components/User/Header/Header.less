@@ -1,0 +1,203 @@
+@import "../../themecolor.less";
+@import "../../function.less";
+
+html {
+    body {
+        .user_header {
+            .faceimg {
+                border: 3px solid #49c4fa;
+                display: table;
+                height: 121px;
+                text-align: center;
+                width: 121px;
+                overflow: hidden;
+
+                .wrapCc {
+                    vertical-align: middle;
+                    display: table-cell;
+
+                    img {
+                        width: 115px;
+                        height: 115px;
+                        overflow: hidden;
+                        /*max-height:115px;
+                        max-width:115px;*/
+                    }
+                }
+            }
+
+            .infoMes {
+                width: 160px;
+                background-color: @themecolor;
+                color: #fff;
+                line-height: 26px;
+                height: 121px;
+
+                .faceBDv{
+                	height: 121px; 
+                	width: 135px; 
+                	margin: 0 auto;
+                	#nav_div_UserName{
+                		font-size: 18px; 
+                		padding-top: 8px;
+                	}
+            		.spanPPDv{
+            			font-size: 12px; 
+            			line-height: 19px;
+            		}
+                }
+
+                .down_icon {
+                    margin-top: 0px;
+                }
+
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+
+                h3 {
+                    margin: 0;
+                    padding: 0;
+                    color: #fff;
+                }
+
+                .pencil {
+                    background: url("http://new.rrliuxue.com/WebResources/Default/images/personal-center/pencil.png") no-repeat scroll 0px 0px;
+                    width: 15px;
+                    height: 16px;
+                    display: block;
+                    float: left;
+                    margin: 7px;
+                    margin-left: 0px;
+                }
+
+                .loginOut {
+                    background: url("http://new.rrliuxue.com/WebResources/Default/images/personal-center/loginOut.png") no-repeat scroll 0px 0px;
+                    width: 21px;
+                    height: 18px;
+                    display: block;
+                    line-height: 21px;
+                    float: left;
+                    margin: 7px;
+                }
+            }
+
+            .de_tw {
+                margin-top: 6px;
+                width: 135px;
+                height: 32px;
+                overflow: hidden;
+            }
+
+            .down_icon {
+                background: url("http://new.rrliuxue.com/WebResources/Default/images/personal-center/down_icon.gif");
+                width: 21px;
+                height: 11px;
+                display: block;
+                margin: 17px 65px 0px auto;
+                display: none;
+            }
+
+            .item_dv:hover {
+                .transition();
+                background-color: @themecolor;
+                cursor: pointer;
+                color: #fff;
+                text-decoration: none;
+
+                .item_logo {
+                    background: url("http://new.rrliuxue.com/WebResources/Default/images/personal-center/icon_active_bg.png");
+                }
+
+                .house {
+                    background-position: 0px 0px;
+                }
+
+                .Intention {
+                    background-position: -182px 0px;
+                }
+
+                .letter {
+                    background-position: -370px 0px;
+                }
+
+                .changePwd {
+                    background-position: 51px 0px;
+                }
+            }
+
+            .item_dv {
+                height: 120px;
+                border: 1px solid @themecolor;
+                width: 150px;
+                margin-right: 35px;
+                color: @themecolor;
+                text-align: center;
+
+                .item_logo {
+                    background: url("http://new.rrliuxue.com/WebResources/Default/images/personal-center/icon_bg.png");
+                    background-position: 0 0;
+                    height: 51px;
+                    width: 51px;
+                    display: block;
+                    margin: 18px auto;
+                }
+
+
+                .house {
+                    background-position: 0px 0px;
+                }
+
+                .Intention {
+                    background-position: -185px 0px;
+                }
+
+                .letter {
+                    background-position: -370px 0px;
+                }
+
+                .changePwd {
+                    background-position: 51px 0px;
+                }
+
+                h5 {
+                    font-weight: 600;
+                }
+                &.theLast{
+                	margin-right: 0;
+                }
+            }
+
+
+            .item_active_dv {
+                background-color: @themecolor;
+                color: #fff;
+
+                .item_logo {
+                    background: url("http://new.rrliuxue.com/WebResources/Default/images/personal-center/icon_active_bg.png");
+                }
+
+                .house {
+                    background-position: 0px 0px;
+                }
+
+                .Intention {
+                    background-position: -185px 0px;
+                }
+
+                .letter {
+                    background-position: -370px 0px;
+                }
+
+                .changePwd {
+                    background-position: 51px 0px;
+                }
+
+                .down_icon {
+                    display: block;
+                }
+            }
+        }
+    }
+}

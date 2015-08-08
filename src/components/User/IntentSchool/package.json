@@ -1,0 +1,6 @@
+{
+  "name": "IntentSchool",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./IntentSchool.js"
+}

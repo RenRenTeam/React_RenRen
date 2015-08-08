@@ -1,0 +1,168 @@
+@import "../themecolor.less";
+@import "../function.less";
+
+.small-menu {
+    background: #fff;
+    width: 70px;
+    padding: 0 1px 0 1px;
+    position: fixed;
+    top: 0;
+    top: 25%;
+    //bottom:0;
+    left: 0;
+    z-index: 1201;
+    display: none;
+
+    .home-menu, .top-menu, .qq-menu, .weixin-menu, .user-menu {
+        margin-bottom: 1px;
+        background-color: #000;
+        height: 70px;
+        .transition(all 300ms ease 0s);
+        a {
+            text-decoration: none;
+        }
+
+        .icon {
+            width: 68px;
+            height: 70px;
+        }
+
+        &:hover {
+            background-color: @smallmenuhoverbg;
+
+            .login {
+                .icon {
+                    color: @smallmenuhoverbg;
+                }
+            }
+        }
+    }
+
+    .home-menu {
+        background-color: #fff;
+        cursor: auto;
+
+        .icon {
+            background: url("http://new.rrliuxue.com//WebResources/Default/images/small-menu/logo-min.png") no-repeat center center;
+        }
+
+        &:hover {
+            background-color: #fff;
+        }
+    }
+
+    .top-menu {
+        cursor: pointer;
+
+        .icon {
+            background: url("http://new.rrliuxue.com//WebResources/Default/images/small-menu/top.png") no-repeat center center;
+        }
+    }
+
+    .qq-menu {
+        .icon {
+            background: url("http://new.rrliuxue.com//WebResources/Default/images/small-menu/QQ.png") no-repeat center center;
+        }
+    }
+
+    .weixin-menu {
+        .icon {
+            background: url("http://new.rrliuxue.com//WebResources/Default/images/small-menu/weixin.png") no-repeat center center;
+            cursor: pointer;
+        }
+
+        &:hover {
+            .weixin-content {
+                .opacity(1);
+                .transform(scale(1));
+
+                .qr {
+                    display: block;
+                }
+            }
+        }
+
+        .weixin-content {
+            position: relative;
+            left: 70px;
+            top: -200px;
+            background: #fff;
+            width: 160px;
+            height: 200px;
+            box-shadow: 0 3px 10px 0 @graycolor;
+            .opacity(0);
+            .transform(scale(0.01));
+            .transform-origin(0% 95% 0);
+            .transition(all 0.4s ease-in-out);
+
+            .title {
+                padding-top: 12px;
+                text-align: center;
+                color: #787d82;
+                line-height: 20px;
+            }
+
+            .qr {
+                position: relative;
+                margin-top: 16px;
+                text-align: center;
+                padding-right: 4px;
+                display: none;
+            }
+        }
+    }
+
+    .user-menu {
+        background-color: #f1494c;
+        cursor: pointer;
+
+        .login-button {
+            position: relative;
+            z-index:2;
+            .icon {
+                text-align: center;
+                line-height: 68px;
+                height: 68px;
+                color: #f1494c;
+                font-family: 'Microsoft YaHei';
+                font-size: 14px;
+                font-weight: bold;
+                background: url("http://new.rrliuxue.com//WebResources/Default/images/small-menu/login.png") no-repeat center center;
+            }
+        }
+
+        .user {
+            display: none;
+
+            .icon {
+                background: url("http://new.rrliuxue.com//WebResources/Default/images/small-menu/mail.png") no-repeat center center;
+            }
+        }
+
+        .login-tip {
+            position: relative;
+            width: 106px;
+            height: 76px;
+            background: url("http://new.rrliuxue.com//WebResources/Default/images/login-tip.png") no-repeat;
+            bottom: 35px;
+            left: 5px;
+            z-index:1;
+        }
+
+        &.logged {
+            .login-button, .login-tip {
+                display: none;
+            }
+
+            .user {
+                display: block;
+            }
+
+            &.msg {
+                .user {
+                    background: url("http://new.rrliuxue.com//WebResources/Default/images/small-menu/new.png") no-repeat 40px 23px;
+                }
+            }
+        }
+    }
+}

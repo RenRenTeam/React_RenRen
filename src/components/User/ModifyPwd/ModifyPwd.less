@@ -1,0 +1,92 @@
+@import '../../variables.less';
+@import '../../function.less';
+@import '../../themecolor.less';
+
+html{
+	body{
+		.myPwd {
+            margin-top: 23px;
+            .itemh4{
+                text-align: center;
+            }
+            #div_result{
+                color: red;
+            }
+            .infoUl li:first-child {
+                border: 3px solid @themecolor;
+                border-bottom: medium none;
+                width: 113px;
+                height: 42px;
+            }
+
+            .infoUl li {
+                float: left;
+
+                h3 {
+                    margin: 4px 0;
+                    text-align: center;
+                }
+            }
+
+            .border_bottom {
+                border-bottom: 3px solid @themecolor;
+                height: 42px;
+                width: 910px;
+            }
+
+            .form_dd {
+                margin-top: 66px;
+                margin-bottom: 430px;
+                width: 435px;
+
+                dl {
+                    margin-bottom: 30px;
+                }
+
+                dd {
+                    float: left;
+                    height: 50px;
+                    line-height: 50px;
+                }
+
+                .titile {
+                    width: 110px;
+                    float: left;
+                    text-align: right;
+                    font-size: 18px;
+                }
+
+                input {
+                    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+                    border: 1px solid @themecolor;
+                    border-radius: 5px;
+                    height: 50px;
+                    margin-left: 10px;
+                    padding-left: 6px;
+                    width: 300px;
+                    line-height:50px;
+                }
+
+                .btn {
+                    float: right;
+                    box-shadow:none;
+
+                    div {
+                        float: left;
+                    }
+                }
+
+                button {
+                    font-size: 16px;
+                    height: 50px;
+                    line-height: 50px;
+                    width: 135px;
+                }
+
+                .btn_cancel {
+                    margin-left: 20px;
+                }
+            }
+        }
+	}
+}

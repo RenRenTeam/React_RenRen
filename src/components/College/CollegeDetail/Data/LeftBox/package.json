@@ -1,0 +1,6 @@
+{
+  "name": "LeftBox",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./LeftBox.js"
+}

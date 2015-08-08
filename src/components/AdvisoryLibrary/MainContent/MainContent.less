@@ -1,0 +1,102 @@
+@import "../../themecolor.less";
+@import "../../function.less";
+
+html{
+    body{
+        .listUl {
+            width: 635px;
+            float: left;
+
+
+            .dvName {
+                height: 270px;
+                margin-top: 40px;
+                border-bottom: 1px solid #cccccc;
+
+                .title a {
+                    font-size: 18px;
+                    color: #000000;
+                    text-decoration: none;
+                }
+
+                .themecolor {
+                    color: @themecolor;
+                }
+
+                .content {
+                    font-size: 14px;
+                    color: #9f9f9f;
+                    width: 300px;
+                    margin-top: 13px;
+
+                    .dv_button {
+                        margin-right: 7px;
+                        line-height: 16px;
+                        height: 16px;
+                        position: relative;
+                        width: 16px;
+                        margin-top: 2px;
+
+                        .like {
+                            background: url("http://new.rrliuxue.com/WebResources/Default/images/hand-action.png") no-repeat 0px 0px;
+                            width: 16px;
+                            height: 16px;
+                            border: medium none;
+                            position: absolute;
+                        }
+                    }
+                    .sysNo{
+                        display: none;
+                    }
+                }
+
+                .detail_content {
+                    margin-top: 13px;
+                    width: 590px;
+                    height: 150px;
+                    position: relative;
+                    overflow: hidden;
+
+                    .article-pic{
+                        float:left;
+                        margin-right:20px;
+                        width:250px;
+                        height:150px;
+                        img{
+                            width:100%;
+                            height:100%;
+                        }
+                    }
+                    .article-description{
+                        float:left;
+                    }
+                    .font {
+                        font-size: 14px;
+                        width: 320px;
+                        line-height: 21px;
+                        max-height: 130px;
+                        overflow: hidden;
+
+                        // font-size: 14px;
+                        // width: 630px;
+                        // line-height: 21px;
+                        // max-height: 130px;
+                        // overflow: hidden;
+
+                        .readAll {
+                            text-align: right;
+                            position: absolute;
+                            bottom: 0px;
+                            right: 0px;
+
+                            a {
+                                color: @themecolor;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

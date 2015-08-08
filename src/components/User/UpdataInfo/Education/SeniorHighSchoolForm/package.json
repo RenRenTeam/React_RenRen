@@ -1,0 +1,6 @@
+{
+  "name": "SeniorHighSchoolForm",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./SeniorHighSchoolForm.js"
+}
