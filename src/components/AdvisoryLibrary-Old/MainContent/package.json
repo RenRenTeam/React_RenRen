@@ -1,6 +1,0 @@
-{
-	"name": "MainContent",
-	"version": "0.0.0",
-	"private": true,
-	"main": "./MainContent.js"
-}
